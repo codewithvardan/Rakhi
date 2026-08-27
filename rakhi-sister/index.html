@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Raksha Bandhan, Rutu Dii</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Great+Vibes&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!--
+  ╔══════════════════════════════════════════════════════════════════╗
+  ║  PERSONALIZE THIS SITE — edit the values below, then match them  ║
+  ║  in the page (search for the same text).                         ║
+  ╠══════════════════════════════════════════════════════════════════╣
+  ║  SISTER’S NAME  →  Didi                                          ║
+  ║  MY NAME        →  Your annoying brother                         ║
+  ║                                                                  ║
+  ║  PHOTOS (put files in /images)                                   ║
+  ║    Hero:          images/hero.jpg                                ║
+  ║    Gallery:       images/photo1.jpg  …  images/photo8.jpg        ║
+  ║    Forever Us:    images/forever.jpg                             ║
+  ║  CAPTIONS       →  the <figcaption> under each gallery photo     ║
+  ║                                                                  ║
+  ║  MESSAGES                                                        ║
+  ║    Hero subtitle, letter in #for-you, surprise notes,            ║
+  ║    and the Forever Us paragraph.                                 ║
+  ║                                                                  ║
+  ║  MUSIC          →  audio/rakhi-song.mp3                          ║
+  ║                  (optional play button in the navbar)            ║
+  ╚══════════════════════════════════════════════════════════════════╝
+  -->
+
+  <div class="bg-hearts" aria-hidden="true"></div>
+  <div class="bg-sparkles" aria-hidden="true"></div>
+
+  <header class="nav-wrap">
+    <nav class="nav" aria-label="Page">
+      <a class="nav-logo" href="#home">Rakhii ❤️</a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#for-you">For You 💌</a></li>
+        <li><a href="#surprises">Little Surprises 🎁</a></li>
+        <li><a href="#forever">Forever Us 🫶</a></li>
+      </ul>
+      <button class="music-btn" type="button" aria-label="Play music" title="Play music">♪</button>
+    </nav>
+  </header>
+
+  <audio id="rakhi-audio" loop preload="auto">
+    <source src="audio/rakhi-song.mp4" type="audio/mp4" />
+    <source src="audio/rakhi-song.mp3" type="audio/mpeg" />
+  </audio>
+
+  <main>
+    <section id="home" class="section hero">
+      <div class="hero-text">
+        <p class="eyebrow">A little rakhi, a lot of love</p>
+        <h1>Happy Raksha Bandhan, Rutu Didi! ❤️</h1>
+        <p class="hero-sub">To my forever annoying, caring and irreplaceable sister.</p>
+        <a class="btn" href="#for-you">Open your letter</a>
+      </div>
+      <figure class="hero-photo polaroid polaroid-lg">
+        <div class="photo-slot">
+          <img src="images/hero.jpg" alt="A photo of us" />
+        </div>
+        <figcaption>❤️</figcaption>
+      </figure>
+    </section>
+
+    <section id="for-you" class="section">
+      <header class="section-head">
+        <h2>For You 💌</h2>
+        <p>A letter I should have written more often.</p>
+      </header>
+      <article class="letter-card">
+        <span class="letter-seal" aria-hidden="true">❤️</span>
+        <p class="letter-dear">Dear Rutu Didi,</p>
+        <p>
+          Kay g makde ,tula vatle me kay ekdum bhari emotional letter write krel ka 
+          😂😂😂😂😂😂😂😂
+        </p>
+        <p>
+          Thank you for being the first person who ever chose me on purpose. For scolding me when
+          I deserved it, defending me when I didn’t, and loving me in that quiet, stubborn way
+          only an older sister can. You made ordinary days feel like they belonged to us.
+        </p>
+        <p>
+          BTW love you 😘😘😘
+        </p>
+        <p>
+          Happy Raksha Bandhan.
+        </p>
+        <p class="letter-sign">Forever your little shadow,<br /><strong>Your annoying brother , Vardan </strong></p>
+      </article>
+    </section>
+
+    <section id="surprises" class="section">
+      <header class="section-head">
+        <h2>Little Surprises 🎁</h2>
+        <p>Tap below to answer!</p>
+      </header>
+      <div class="surprise-grid">
+        <button class="surprise-card" type="button" data-surprise="quiz">
+          <span class="surprise-emoji">🎁</span>
+          <h3>A tiny question</h3>
+          <p>You already know the answer.</p>
+        </button>
+      </div>
+    </section>
+
+    <section id="forever" class="section forever">
+      <header class="section-head">
+        <h2>Forever Us 🫶</h2>
+      </header>
+      <div class="forever-layout">
+        <figure class="polaroid polaroid-lg forever-photo">
+          <div class="photo-slot">
+            <img src="images/forever.jpg" alt="Us, forever" />
+          </div>
+          <figcaption>🫶</figcaption>
+        </figure>
+        <div class="forever-copy">
+          <p class="script">Rutu Didi,</p>
+          <p>
+            I am proud to be your brother, and I will keep choosing that — loudly, softly,
+            and on every Raksha Bandhan between now and forever.
+          </p>
+          <p class="forever-end">You &amp; me. That’s the whole story.</p>
+          <div class="heart-burst" aria-hidden="true">
+            <span>💗</span><span>💖</span><span>❤️</span><span>💕</span><span>💗</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Made with ❤️ by Vardan</p>
+  </footer>
+
+  <div class="modal" id="surprise-modal" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" type="button" data-close-modal aria-label="Close">×</button>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
